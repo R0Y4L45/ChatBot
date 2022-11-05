@@ -12,9 +12,7 @@ namespace WpfApp5
         public MainWindow()
         {
             InitializeComponent();
-            string s = Environment.CurrentDirectory;
-            s = s.Substring(0, s.Length - 25);
-            Directory.SetCurrentDirectory(s);
+            Directory.SetCurrentDirectory("../../../");
 
             AI.loadSettings(); 
             AI.loadAIMLFromFiles(); 
